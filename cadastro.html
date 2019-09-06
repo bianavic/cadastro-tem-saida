@@ -116,127 +116,61 @@
 
         <tr>
         <tr>
-          <td>
-            <label for="cep">CEP: </label>
-          </td>
+          <td> <label for="cep">CEP: </label> </td>
+          <td align="left"> <input type="number" name="cep" id="cep" /> </td>
+        </tr>
+
+        <td> <label for="estado">Estado:</label> </td>
+        <td align="left"> <input type="text" name="estado" id="estado" /> </td>
+
+        <td> <label for="cidade">Cidade: </label> </td>
+        <td align="left"> <input type="text" name="cidade" id="cidade"></td>
+
+        <td> <label for="bairro">Bairro: </label> </td>
+        <td align="left"> <input type="text" name="bairro" id="bairro"></td>
+        <tr>
+          <td><label for="endereco">Endereço:</label></td>
+          <td align="left"> <input type="text" name="endereco" id="endereco" /></td>
+
+          <td> <label for="numero">Número:</label></td>
+          <td align="left"> <input type="number" name="numero" id="numero"></td>
+
+          <td><label for="numero">Complemento:</label></td>
+          <td align="left"> <input type="text" name="complemento" id="complemento"></td>
+        </tr>
+        </tr>
+
+        <tr>
+          <td><label for="telefone">Telefone: </label></td>
+          <td align="left"><input type="text" name="telefone"></td>
+          <td><label for="telefone">Telefone: </label></td>
+          <td align="left"><input type="text" name="telefone"></td>
+          <td><label for="telefone">Telefone: </label></td>
           <td align="left">
-            <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3"
-              maxlength="3">
+            <input type="text" name="telefone"></td>
+        </tr>
+
+        <tr>
+          <td><label for="contato">Horários de contato:</label></td>
+          <td align="left"><input type="radio" required name="title" id="r1" value="manha"><label for="r1">manha</label>
+          </td>
+          <td align="left"><input type="radio" required name="title" id="r2" value="tarde"><label for="r2">tarde</label>
+          </td>
+          <td align="left"><input type="radio" required name="title" id="r1" value="noite"><label for="r1">noite</label>
           </td>
         </tr>
 
-        <td>
-          <label for="rua">Rua:</label>
-        </td>
-        <td align="left">
-          <input type="text" name="rua">
-        </td>
-        <td>
-          <label for="complemento">Complemento:</label>
-        </td>
-        <td align="left">
-          <input type="text" name="complemento" size="4">
-        </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="bairro">Bairro: </label>
-          </td>
-          <td align="left">
-            <input type="text" name="bairro">
-          </td>
-
-        </tr>
-        <tr>
-          <td>
-            <label for="estado">Estado:</label>
-          </td>
-          <td align="left">
-            <select name="estado">
-              <option value="ac">Acre</option>
-              <option value="al">Alagoas</option>
-              <option value="am">Amazonas</option>
-              <option value="ap">Amapá</option>
-              <option value="ba">Bahia</option>
-              <option value="ce">Ceará</option>
-              <option value="df">Distrito Federal</option>
-              <option value="es">Espírito Santo</option>
-              <option value="go">Goiás</option>
-              <option value="ma">Maranhão</option>
-              <option value="mt">Mato Grosso</option>
-              <option value="ms">Mato Grosso do Sul</option>
-              <option value="mg">Minas Gerais</option>
-              <option value="pa">Pará</option>
-              <option value="pb">Paraíba</option>
-              <option value="pr">Paraná</option>
-              <option value="pe">Pernambuco</option>
-              <option value="pi">Piauí</option>
-              <option value="rj">Rio de Janeiro</option>
-              <option value="rn">Rio Grande do Norte</option>
-              <option value="ro">Rondônia</option>
-              <option value="rs">Rio Grande do Sul</option>
-              <option value="rr">Roraima</option>
-              <option value="sc">Santa Catarina</option>
-              <option value="se">Sergipe</option>
-              <option value="sp">São Paulo</option>
-              <option value="to">Tocantins</option>
-            </select>
-          </td>
-
-          <td>
-            <label for="cidade">Cidade: </label>
-          </td>
-          <td align="left">
-            <input type="text" name="cidade">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="telefone">Telefone: </label>
-          </td>
-          <td align="left">
-            <input type="text" name="telefone">
-          </td>
-          <td>
-            <label for="telefone">Telefone: </label>
-          </td>
-          <td align="left">
-            <input type="text" name="telefone">
-          </td>
-          <td>
-            <label for="telefone">Telefone: </label>
-          </td>
-          <td align="left">
-            <input type="text" name="telefone">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="contato">Horários de contato:</label>
-          </td>
-          <td align="left">
-            <input type="radio" required name="title" id="r1" value="manha"><label for="r1">manha</label>
-          </td>
-          <td align="left">
-            <input type="radio" required name="title" id="r2" value="tarde"><label for="r2">tarde</label>
-          </td>
-          <td align="left">
-            <input type="radio" required name="title" id="r1" value="noite"><label for="r1">noite</label>
-          </td>
-        </tr>
       </table>
 
-
-      <!-- JUSTIFICATIVA -->
-      <legend>Justificativa</legend>
-      <label for="justificativa"></label>
-      <textarea class="form-control" id="justificativa" rows="5" cols="33">Justificativa</textarea>
+      <div>
+        <!-- JUSTIFICATIVA -->
+        <legend>Justificativa</legend>
+        <label for="justificativa"></label>
+        <textarea class="form-control" id="justificativa" rows="5" cols="33">Justificativa</textarea>
       </div>
-
 
     </fieldset>
     <br />
-
 
     <!-- OFICIO -->
     <fieldset>
@@ -244,45 +178,34 @@
       <table cellspacing="10">
 
         <tr>
-          <td>
-            <label for="imagem">Documento:</label>
-          </td>
-          <td>
-            <input type="file" name="imagem">
-          </td>
+          <td><label for="imagem">Documento:</label></td>
+          <td> <input type="file" name="imagem"> </td>
         </tr>
 
         <tr>
-          <td>
-          <label>CPF/Login do Usuário:</label>
-        </td>
-        <td align="left">
-          <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2"
-            maxlength="2">
+          <td> <label>CPF/Login do Usuário:</label> </td>
+          <td align="left"><input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2"
+              size="2" maxlength="2">
         </tr>
         <tr>
-          <td>
-            <label for="pass">Senha: </label>
-          </td>
-          <td align="left">
-            <input type="password" name="pass">
-          </td>
+          <td><label for="pass">Senha: </label></td>
+          <td align="left"><input type="password" name="pass"></td>
         </tr>
         <tr>
-          <td>
-            <label for="passconfirm">Confirme a senha: </label>
-          </td>
-          <td align="left">
-            <input type="password" name="passconfirm">
-          </td>
+          <td> <label for="passconfirm">Confirme a senha: </label></td>
+          <td align="left"><input type="password" name="passconfirm"> </td>
         </tr>
+
       </table>
     </fieldset>
     <br />
+
     <input type="submit">
     <input type="reset" value="Limpar">
+
   </form>
 
+  <script src="cadastro.js"> </script>
 </body>
 
 </html>
